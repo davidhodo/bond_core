@@ -42,6 +42,7 @@
 #include <bond/Constants.h>
 #include <bond/Status.h>
 #include "BondSM_sm.h"
+#include "macros.h"
 
 namespace bond {
 
@@ -51,7 +52,7 @@ namespace bond {
  * another process and be notified when it dies.  In turn, it will be
  * notified when you die.
  */
-class Bond
+class BONDCPP_DECL Bond
 {
 public:
   /** \brief Constructs a bond, but does not connect
