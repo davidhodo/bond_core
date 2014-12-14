@@ -184,8 +184,9 @@ private:
 
 
 // Internal use only
-struct BondSM
+class BondSM
 {
+public:
   BondSM(bond::Bond *b_) : b(b_) {}
   void Connected();
   void SisterDied();
